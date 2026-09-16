@@ -1,0 +1,399 @@
+:root {
+  --ink: #222;
+  --muted: #4a4a4a;
+  --paper: #f4f1ea;
+  --white: #fff;
+  --navy: #1e3a5f;
+  --navy-dark: #162c48;
+  --rule: #d0cbbd;
+  --link: #1e3a5f;
+  --select: #e8e3d6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+a {
+  color: var(--link);
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+
+.banner {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.2rem 0.8rem;
+}
+
+.banner p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.banner h1 {
+  margin: 0.2rem 0 0;
+  font-size: 1.65rem;
+  font-weight: normal;
+}
+
+nav {
+  background: var(--navy-dark);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.4rem 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.4rem 1.2rem 2.2rem;
+}
+
+.lead {
+  margin: 0 0 1.1rem;
+}
+
+form {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  padding: 0.85rem 1rem 1rem;
+  max-width: 36rem;
+}
+
+form.add {
+  max-width: none;
+  margin-top: 1.4rem;
+}
+
+form.add h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+form.add p {
+  margin: 0;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.65rem;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem !important;
+}
+
+label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.88rem;
+}
+
+input[type="search"],
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.4rem 0.5rem;
+  font: inherit;
+  border: 1px solid #8a8578;
+  background: var(--white);
+}
+
+textarea {
+  min-height: 6rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.4rem 0.85rem;
+  background: var(--navy);
+  color: var(--white);
+  border: 0;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: var(--white);
+  color: var(--navy);
+  border: 1px solid var(--navy);
+}
+
+.err {
+  color: #7a2424;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.92rem;
+  margin: 0 0 0.6rem !important;
+}
+
+.detail-actions {
+  margin: 0.9rem 0 0;
+  display: flex;
+  gap: 0.55rem;
+}
+
+.file-bar {
+  margin-top: 1.4rem;
+  padding: 0.85rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--rule);
+}
+
+.file-bar .status {
+  margin: 0.6rem 0 0;
+}
+
+.status {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0.85rem 0 0.6rem;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.list-wrap {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  overflow: auto;
+  min-height: 16rem;
+}
+
+.records {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.records th,
+.records td {
+  text-align: left;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.records th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  background: #e8e3d6;
+}
+
+.records tbody tr {
+  cursor: pointer;
+}
+
+.records tbody tr:hover {
+  background: #f7f4ec;
+}
+
+.records tbody tr[aria-selected="true"] {
+  background: var(--select);
+}
+
+.records tbody tr:focus {
+  outline: 2px solid var(--navy);
+  outline-offset: -2px;
+}
+
+.records td:nth-child(3) {
+  white-space: nowrap;
+}
+
+.empty {
+  margin: 0;
+  padding: 1.4rem 1rem 1.6rem;
+  color: var(--muted);
+}
+
+.empty strong {
+  color: var(--ink);
+  font-weight: normal;
+}
+
+.detail {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  padding: 0.9rem 1rem 1.2rem;
+  min-height: 16rem;
+}
+
+.detail-hint {
+  color: var(--muted);
+  margin: 0;
+}
+
+.detail h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: normal;
+}
+
+.detail .meta {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+}
+
+.detail dl {
+  margin: 0;
+}
+
+.detail dt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0.55rem 0 0.1rem;
+}
+
+.detail dd {
+  margin: 0;
+}
+
+.detail .phone {
+  font-size: 1.2rem;
+}
+
+.card-head {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+footer {
+  border-top: 3px solid var(--navy);
+  background: #e8e3d6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.88rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.9rem 1.2rem 1.2rem;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+@media (max-width: 800px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+
+  .banner h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .skip,
+  nav,
+  .lead,
+  #search-form,
+  #status,
+  .list-wrap,
+  #topic-form,
+  #city-form,
+  .file-bar,
+  footer,
+  .detail-actions {
+    display: none !important;
+  }
+
+  .banner {
+    background: #fff;
+    color: #000;
+    border-bottom: 3px solid #000;
+  }
+
+  .banner p,
+  .banner h1 {
+    color: #000;
+  }
+
+  main {
+    max-width: none;
+    padding: 0;
+  }
+
+  .split {
+    display: block;
+  }
+
+  .detail {
+    border: 2px solid #000;
+    min-height: 0;
+    padding: 1.2rem 1.3rem;
+  }
+
+  .detail .phone {
+    font-size: 1.4rem;
+  }
+}

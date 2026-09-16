@@ -1,0 +1,9 @@
+{
+  "name": "who-to-call",
+  "private": true,
+  "description": "Who do I call. Type a problem. See the desk, phone, and hours.",
+  "type": "module",
+  "scripts": {
+    "start": "node site/server.js"
+  }
+}

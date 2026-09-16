@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who do I call</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#q">Skip to search</a>
+  <header class="banner">
+    <div class="banner-inner">
+      <p id="place-line">City of Galion, Ohio</p>
+      <h1 id="desk-line">City Clerk</h1>
+    </div>
+  </header>
+  <nav>
+    <div class="nav-inner">
+      <a href="./" aria-current="page">Who do I call</a>
+    </div>
+  </nav>
+  <main>
+    <p class="lead">Type the problem. The page shows the desk, the phone, and the window hours. Add your own rows, change the city name, then download the folder and drop it into your own site. Nothing on this page sends mail.</p>
+    <form id="search-form" action="#" method="get" role="search">
+      <label for="q">What do you need</label>
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="pothole, birth record, dog license…">
+    </form>
+    <p id="status" class="status" aria-live="polite"></p>
+    <div class="split">
+      <div class="list-wrap">
+        <table class="records" id="results-table" hidden>
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Desk</th>
+              <th>Phone</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <p id="empty" class="empty"></p>
+      </div>
+      <article id="detail" class="detail" aria-live="polite">
+        <p class="detail-hint">Type a problem, then click a row. The desk and hours open here.</p>
+      </article>
+    </div>
+
+    <form id="topic-form" class="add" action="#">
+      <h2 id="topic-form-title">Add a problem</h2>
+      <p id="topic-err" class="err" hidden></p>
+      <div class="row2">
+        <p>
+          <label for="top-problem">Problem</label>
+          <input id="top-problem" type="text" autocomplete="off" placeholder="Pothole or street repair">
+        </p>
+        <p>
+          <label for="top-words">Other words people type</label>
+          <input id="top-words" type="text" autocomplete="off" placeholder="street road asphalt hole">
+        </p>
+      </div>
+      <div class="row2">
+        <p>
+          <label for="top-desk">Desk</label>
+          <input id="top-desk" type="text" autocomplete="off">
+        </p>
+        <p>
+          <label for="top-phone">Phone</label>
+          <input id="top-phone" type="text" autocomplete="off">
+        </p>
+      </div>
+      <div class="row2">
+        <p>
+          <label for="top-window">Window</label>
+          <input id="top-window" type="text" autocomplete="off" placeholder="Clerk window, City Hall">
+        </p>
+        <p>
+          <label for="top-hours">Hours</label>
+          <input id="top-hours" type="text" autocomplete="off">
+        </p>
+      </div>
+      <p>
+        <label for="top-notes">What to tell them</label>
+        <textarea id="top-notes"></textarea>
+      </p>
+      <div class="actions">
+        <button type="submit" id="topic-save">Add to the list</button>
+        <button type="button" class="secondary" id="topic-cancel" hidden>Cancel edit</button>
+      </div>
+    </form>
+
+    <form id="city-form" class="add" action="#">
+      <h2>This city</h2>
+      <p class="note">Put your town on the banner. Sample Galion text is only a starter.</p>
+      <p id="city-err" class="err" hidden></p>
+      <div class="row2">
+        <p>
+          <label for="city-place">City line</label>
+          <input id="city-place" type="text" autocomplete="organization">
+        </p>
+        <p>
+          <label for="city-desk">Desk name</label>
+          <input id="city-desk" type="text">
+        </p>
+      </div>
+      <div class="row2">
+        <p>
+          <label for="city-street">Street</label>
+          <input id="city-street" type="text">
+        </p>
+        <p>
+          <label for="city-place-line">City, state, ZIP</label>
+          <input id="city-place-line" type="text" placeholder="Galion, Ohio 44833">
+        </p>
+      </div>
+      <div class="row2">
+        <p>
+          <label for="city-phone">Phone</label>
+          <input id="city-phone" type="text">
+        </p>
+        <p>
+          <label for="city-email">Email</label>
+          <input id="city-email" type="text">
+        </p>
+      </div>
+      <p>
+        <label for="city-hours">Hours</label>
+        <input id="city-hours" type="text">
+      </p>
+      <div class="actions">
+        <button type="submit">Save city</button>
+      </div>
+    </form>
+
+    <div class="file-bar">
+      <p class="note">The tool is this page plus three files next to it. Download the folder and copy it into any website.</p>
+      <button type="button" id="kit-btn">Download folder</button>
+      <button type="button" class="secondary" id="download-btn">Download JSON only</button>
+      <button type="button" class="secondary" id="load-btn">Load JSON</button>
+      <button type="button" class="secondary" id="restore-btn">Restore sample list</button>
+      <input id="load-file" type="file" accept="application/json,.json" hidden>
+      <p id="file-msg" class="status" aria-live="polite"></p>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <p id="foot-addr"></p>
+      <p id="foot-contact"></p>
+      <p id="foot-hours"></p>
+    </div>
+  </footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

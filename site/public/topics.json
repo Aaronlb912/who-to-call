@@ -1,0 +1,135 @@
+{
+  "city": {
+    "place": "City of Galion, Ohio",
+    "desk": "City Clerk",
+    "street": "118 Harding Way East",
+    "city": "Galion",
+    "state": "Ohio",
+    "zip": "44833",
+    "phone": "(419) 555-0142",
+    "email": "clerk@galion.oh.example",
+    "hours": "Monday through Friday, 8:00 a.m. to 4:30 p.m. Closed 12:00 to 12:30 for lunch."
+  },
+  "topics": [
+    {
+      "id": "pothole",
+      "problem": "Pothole or street repair",
+      "words": "pothole street road asphalt hole pavement patch curb",
+      "desk": "Street Department",
+      "phone": "(419) 555-0188",
+      "window": "Window 3, Service Garage, 40 South Market Street",
+      "hours": "Monday through Friday, 7:00 a.m. to 3:30 p.m.",
+      "notes": "Call before 2:00 p.m. if you want it on this week's patch list. After hours, leave the street and house number on the machine."
+    },
+    {
+      "id": "birth",
+      "problem": "Birth or death record",
+      "words": "birth death record certificate vital copy certified obituary",
+      "desk": "Vital Records",
+      "phone": "(419) 555-0142",
+      "window": "Clerk window, City Hall",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "notes": "Bring a photo ID. Cash or check. City copies are the ones we keep here. County health still issues the state certificate."
+    },
+    {
+      "id": "dog",
+      "problem": "Dog license",
+      "words": "dog license pet rabies tag kennel",
+      "desk": "City Clerk",
+      "phone": "(419) 555-0142",
+      "window": "Clerk window, City Hall",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "notes": "Need the rabies certificate. Tags are sold January through March at this window. After April 1 the county auditor sells them."
+    },
+    {
+      "id": "water",
+      "problem": "Water or sewer bill",
+      "words": "water sewer bill utility leak meter shutoff",
+      "desk": "Utility Office",
+      "phone": "(419) 555-0160",
+      "window": "Window 1, City Hall, first floor",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "notes": "Bills mail on the first. Due the 20th. A leak on the street side of the meter is ours. A leak in the house is a plumber."
+    },
+    {
+      "id": "permit",
+      "problem": "Building or fence permit",
+      "words": "building permit fence shed porch zoning addition garage",
+      "desk": "Zoning",
+      "phone": "(419) 555-0174",
+      "window": "Window 2, City Hall, second floor",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:00 p.m.",
+      "notes": "Bring a sketch with the lot lines. Fence height is four feet in the front yard, six in the back. Cash or check for the fee."
+    },
+    {
+      "id": "trash",
+      "problem": "Trash or missed pickup",
+      "words": "trash garbage recycling bin missed pickup refuse",
+      "desk": "Sanitation",
+      "phone": "(419) 555-0191",
+      "window": "Service Garage, 40 South Market Street",
+      "hours": "Monday through Friday, 7:00 a.m. to 3:00 p.m.",
+      "notes": "Set cans at the curb by 6:00 a.m. If the truck missed you, call the same day. Extra bags need a sticker from the clerk window."
+    },
+    {
+      "id": "parking",
+      "problem": "Parking ticket",
+      "words": "parking ticket citation meter tow fine",
+      "desk": "Police records",
+      "phone": "(419) 555-0130",
+      "window": "Police window, 21 Public Square",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:00 p.m.",
+      "notes": "Pay here or mail the envelope on the ticket. Do not bring the ticket to the clerk window. We cannot void it."
+    },
+    {
+      "id": "marriage",
+      "problem": "Marriage license",
+      "words": "marriage license wedding ceremony",
+      "desk": "City Clerk",
+      "phone": "(419) 555-0142",
+      "window": "Clerk window, City Hall",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "notes": "Both people need to come in. Photo ID and the $65 fee. We do not perform the ceremony here."
+    },
+    {
+      "id": "tree",
+      "problem": "Tree or limb in the street",
+      "words": "tree limb branch down storm oak maple",
+      "desk": "Street Department",
+      "phone": "(419) 555-0188",
+      "window": "Service Garage, 40 South Market Street",
+      "hours": "Monday through Friday, 7:00 a.m. to 3:30 p.m.",
+      "notes": "A limb in the travel lane is ours. A tree on private property is the owner. After hours call the non-emergency police number on the card by the door."
+    },
+    {
+      "id": "snow",
+      "problem": "Snow plow or ice",
+      "words": "snow plow ice salt sidewalk storm",
+      "desk": "Street Department",
+      "phone": "(419) 555-0188",
+      "window": "Service Garage, 40 South Market Street",
+      "hours": "During a storm, the garage stays open until the main streets are clear.",
+      "notes": "We plow the numbered streets first, then the side streets. Do not shovel snow back into the road. Sidewalks in front of a house are the owner."
+    },
+    {
+      "id": "minutes-copy",
+      "problem": "Copy of minutes or an ordinance",
+      "words": "minutes ordinance copy council record",
+      "desk": "City Clerk",
+      "phone": "(419) 555-0142",
+      "window": "Clerk window, City Hall",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "notes": "Plain copies are 25 cents a page. We do not certify them at this window. Ask if you need the stamped version."
+    },
+    {
+      "id": "tax",
+      "problem": "City income tax",
+      "words": "income tax withholding rita form",
+      "desk": "Income Tax",
+      "phone": "(419) 555-0155",
+      "window": "Window 4, City Hall, first floor",
+      "hours": "Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "notes": "The city form is due April 15. Withholding questions go here, not the county auditor."
+    }
+  ]
+}
