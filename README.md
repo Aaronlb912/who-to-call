@@ -97,6 +97,8 @@ http://127.0.0.1:47319/
 
 ## Demo
 
+https://github.com/user-attachments/assets/7d6145b5-f013-41ed-bef4-98d77f40630d
+
 Repo copy: [docs/media/who-to-call-demo.mp4](docs/media/who-to-call-demo.mp4)
 
 Voice is Microsoft Andrew Neural. Music is Wallpaper by Kevin MacLeod (incompetech.com), CC BY 3.0.
